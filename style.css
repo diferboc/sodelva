@@ -1,0 +1,130 @@
+/*  Reset General*/
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/*Estilos del  Header */
+header {
+    padding: 20px;
+    background-color:white;
+    color:black;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Estilos del Logo */
+.logo img {
+    width: 165px;
+    height: auto;
+}
+
+/* Estilos de la Navigacion */
+nav ul {
+    display: flex; /* hace la navegacion horizontal */
+    gap: 20px; /* Espaciado entre links */
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: green; /*Color hover al pasar mouse */
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.btn:hover{
+    background-color: greenyellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilo del pie de pagina */
+footer{
+    background-color: white;
+    color: black;
+    padding: 209x 0;
+    font-size: 16px;
+}
+
+.contenedor-pie-pagina{
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.seccion-contacto{
+    flex: 1;
+    min-width: 250px;
+}
+
+.seccion-contacto a{
+    color: black;
+    text-decoration: none;
+}
+
+.seccion-contacto a:hover{
+    color: green;
+}
+
+.fin-footer{
+    text-align: center;
+    padding: 10px 0;
+ 
+    margin-top: 20px;
+    font-size: 16px;
+    width: 1200px;
+
+}

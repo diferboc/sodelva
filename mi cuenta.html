@@ -1,0 +1,100 @@
+<!--Mi Cuenta
+
+Objetivo: Gestionar pedidos, información personal y preferencias.
+
+Secciones:
+
+Perfil:
+
+Información del usuario.
+
+Historial de Pedidos:
+
+Lista de compras con opción de reordenar.
+
+Configuración:
+
+Cambiar contraseña.
+
+Notificaciones.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICUENTA</title>
+</head>
+<body>
+    <footer>
+
+    </footer>
+
+    <main>
+        <main>
+            <!-- Sección: Perfil -->
+            <section id="perfil">
+                <h2>Perfil</h2>
+                <div class="info-usuario">
+                    <p><strong>Nombre:</strong> Juan Pérez</p>
+                    <p><strong>Correo Electrónico:</strong> juan.perez@example.com</p>
+                    <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+                    <button onclick="editarPerfil()">Editar Información</button>
+                </div>
+            </section>
+    
+            <!-- Sección: Historial de Pedidos -->
+            <section id="historial-pedidos">
+                <h2>Historial de Pedidos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Producto</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>23/12/2024</td>
+                            <td>Pulpas de Mango (5 kg)</td>
+                            <td>$50,000</td>
+                            <td>Entregado</td>
+                            <td><button onclick="reordenarPedido()">Reordenar</button></td>
+                        </tr>
+                        <tr>
+                            <td>15/11/2024</td>
+                            <td>Empaques de Aguacate</td>
+                            <td>$35,000</td>
+                            <td>Entregado</td>
+                            <td><button onclick="reordenarPedido()">Reordenar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <!-- Sección: Configuración -->
+            <section id="configuracion">
+                <h2>Configuración</h2>
+                <div class="form-control">
+                    <label for="password">Cambiar Contraseña:</label>
+                    <input type="password" id="password" placeholder="Nueva Contraseña">
+                    <button onclick="cambiarContrasena()">Guardar</button>
+                </div>
+    
+                <div class="notification-toggle">
+                    <label for="notificaciones">Activar Notificaciones:</label>
+                    <input type="checkbox" id="notificaciones" checked>
+                </div>
+            </section>
+        </main>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
