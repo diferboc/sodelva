@@ -1,103 +1,126 @@
-<!-- Soy Productor
-
-Objetivo: Facilitar a los campesinos registrarse y participar en la plataforma.
-
-Secciones:
-
-Formulario de Registro:
-
-Datos personales.
-
-Descripción de la producción (tipos de cultivos, volumen, etc.).
-
-Recursos Disponibles:
-
-Cursos y talleres.
-
-Opciones de financiamiento.
-
-Comunidad de apoyo.
-
-Historias de Éxito:
-
-Testimonios de productores beneficiados. -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOYPRODUCTOR</title>
+    <meta name="description" content="Conviértete en parte de nuestra red de productores orgánicos en Soluciones Orgánicas del Valle S.A.">
+    <title>Soy Productor | Soluciones Orgánicas del Valle S.A.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-
     <header>
+        <div class="contenedor-header">
 
+            <div  >
+                <a href="quienessomos.html">
+                    <img class="logosodelva" src="assets/logosodelva (1).png" alt="Logo Soluciones Orgánicas del Valle">
+                </a>
+                
+            </div>
+
+            <div class="barras-navegacion">
+                <nav class="main-nav">
+            
+                    <ul class="nav-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
+                        <li><a href="soy productor.html">Soy Productor</a></li>
+                        <li><a href="mi cuenta.html">Mi Cuenta</a></li>
+                        
+                    </ul>
+                </nav>
+
+                 <!-- barra de navegacion redes sociales -->
+                <nav class="nav-social">
+                    <ul>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html" class="active">Contacto</a></li>
+                        <div class="link_rs">
+                            <li><a href="https://www.facebook.com" target="_blank" class="social-icon"> <img src="assets/LOGOFB.png" alt="icono de facebook"> </a></li>
+                            <li><a href="https://www.instagram.com" target="_blank" class="social-icon"> <img src="assets/LOGOITG.png" alt="icono de instagram"> </a> </li>
+                            <li><a href="https://linkedink.com" target="_blank" class="social-icon"> <img src="assets/icons8-linkedin-50.png" alt="icono de linkedink"> </a></li>
+                        </div>
+                        
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+       
     </header>
 
     <main>
-        <section id="">
-            <h2>Formulario de Registro</h2>
-            <p>Únete a nuestra plataforma para acceder a recursos, financiamiento y una comunidad de apoyo.</p>
-            <form action="/registro-productor" method="POST">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-
-                <label for="telefono">Número de Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" required>
-
-                <label for="produccion">Descripción de tu Producción:</label>
-                <textarea id="produccion" name="produccion" rows="4" placeholder="Describe los cultivos, volumen de producción, etc." required></textarea>
-
-                <label for="ubicacion">Ubicación:</label>
-                <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingresa tu ubicación geográfica" required>
-
-                <label for="categoria">Categoría de Producción:</label>
-                <select id="categoria" name="categoria" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="frutas">Frutas</option>
-                    <option value="verduras">Verduras</option>
-                    <option value="granos">Granos</option>
-                    <option value="otros">Otros</option>
-                </select>
-
-                <button type="submit">Registrarse</button>
-            </form>
+        <section class="hero-producer">
+            <h1>Únete como Productor</h1>
+            <p>Conviértete en parte de nuestra red de productores orgánicos y recibe apoyo para crecer de manera sostenible.</p>
+            <a href="#benefits" class="btn">Descubre los Beneficios</a>
         </section>
 
-        <!-- Sección: Recursos Disponibles -->
-        <section id="recursos">
-            <h2>Recursos Disponibles</h2>
-            <p>Accede a herramientas que impulsarán tu producción y desarrollo personal:</p>
+        <section id="benefits" class="producer-benefits">
+            <h2>Beneficios para Productores</h2>
             <ul>
-                <li>Cursos y talleres sobre técnicas de cultivo sostenibles.</li>
-                <li>Opciones de financiamiento para modernizar tu producción.</li>
-                <li>Comunidad de apoyo con otros productores y expertos.</li>
+                <li><strong>Acceso a Nuevos Mercados:</strong> Comercializa tus productos a través de nuestra plataforma.</li>
+                <li><strong>Precios Justos:</strong> Garantizamos precios competitivos y sostenibles.</li>
+                <li><strong>Asesoría Técnica:</strong> Recibe apoyo en prácticas agrícolas orgánicas y sostenibles.</li>
+                <li><strong>Capacitaciones:</strong> Participa en talleres y seminarios especializados.</li>
             </ul>
         </section>
 
-        <!-- Sección: Historias de Éxito -->
-        <section id="historias-exito">
-            <h2>Historias de Éxito</h2>
-            <p>Descubre cómo nuestra plataforma ha transformado la vida de productores locales.</p>
+        <section class="how-to-join">
+            <h2>¿Cómo Unirte?</h2>
+            <ol>
+                <li><strong>Regístrate:</strong> Completa el formulario de registro en línea.</li>
+                <li><strong>Validación:</strong> Nuestro equipo evaluará tu solicitud y verificará tus prácticas agrícolas.</li>
+                <li><strong>Conéctate:</strong> Una vez aprobado, comienza a vender tus productos a través de nuestra red.</li>
+            </ol>
+            <a href="register-producer.html" class="btn">Regístrate Ahora</a>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonios de Productores</h2>
             <div class="testimonial">
-                <h3>José García</h3>
-                <p><em>"Gracias a Soluciones Orgánicas del Valle, pude duplicar mi producción y acceder a mercados internacionales."</em></p>
+                <p>"Desde que me uní a Soluciones Orgánicas del Valle, mis ingresos han mejorado significativamente y ahora tengo acceso a mercados que antes eran inalcanzables."</p>
+                <p><strong>- Juan Pérez, Productor de Café Orgánico</strong></p>
             </div>
             <div class="testimonial">
-                <h3>Luisa Martínez</h3>
-                <p><em>"Los talleres sobre sostenibilidad me ayudaron a reducir costos y mejorar la calidad de mis cultivos."</em></p>
+                <p>"La asesoría técnica me ayudó a mejorar mi producción y reducir costos. Estoy muy agradecida por el apoyo."</p>
+                <p><strong>- María Rodríguez, Productora de Frutas Orgánicas</strong></p>
             </div>
         </section>
 
+        <section class="contact-producer">
+            <h2>¿Tienes Preguntas?</h2>
+            <p>Contáctanos para más información sobre cómo convertirte en productor de nuestra red.</p>
+            <a href="contact.html" class="btn">Contáctanos</a>
+        </section>
     </main>
 
     <footer>
-        
-    </footer>
+        <div class="footer-container">
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3>Soluciones Orgánicas del Valle</h3>
+                <p>Dirección: Calle 11, 8 -39 Ciudad de Candelaria, Valle</p>
+                <p>Teléfono: +57 313 525 6779</p>
+                <p>Email: contacto@solucionesorganicas.com</p>
+            </div>
     
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook"> <img src="assets/LOGOFB.png" alt="logo de facebook"> </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram"> <img src="assets/LOGOITG.png" alt="logo de instagram"></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter"> <img src="assets/icons8-linkedin-50.png" alt="logo de linkedink"></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Soluciones Orgánicas del Valle. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

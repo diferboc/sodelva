@@ -6,125 +6,222 @@ body, ul, li {
     font-family: Arial, sans-serif;
 }
 
-/*Estilos del  Header */
+/* Estilos generales */
+
 header {
-    padding: 20px;
-    background-color:white;
-    color:black;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    display:inline;
+    
+   
 }
 
-.container{
+
+.contenedor-header{
+
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    border-top: 5px solid #1a7b3b; /* Borde decorativo verde claro */
+    border-bottom: 1px solid #1a7b3b;
+   
+}
+
+.logosodelva{
+    width:180px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    margin-right: 20px;
+}
+
+.nav-links{
+    list-style: none;
+    display:inline;
+    margin-left: 10px;    
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 15px 5px 5px 5px;
+ 
+}
+
+.nav-links, .social-nav, a {
+    text-decoration: none;
+    color: #1a7b3b;
+    font-weight: bold;
+    padding: 10px 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.nav-links a:hover{
+    color: #8dc63f;
+}
+
+
+
+/* Barra de navegación inferior para redes sociales */
+header, .nav-social{
+  
+    text-align:end;
+    display: inline-flex;
+    background-color:white;
+    padding-top: 20PX;
+    padding-right: 30px;
+    
+}
+
+ul, .social-nav {
+    list-style: none;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    
+
+}
+
+.nav-social li {
+    display: inline;
+    margin-right: 30px;
+    margin-top: 2px;
+}
+
+.nav-social a {
+    text-decoration: none;
+    color: #1a7b3b;
+    font-weight: bold;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon img{
+
+    width: 30px;
+    height: auto;
+   
+}
+
+
+
+.nav-social a:hover{
+    
+    color: #8dc63f
+    
+}
+
+.link_rs a:hover{
+    background-color: #1a7b3b;
+    border-radius: 10%;
+   
+}
+
+.link_rs a{
+    border: 2px solid #8dc63f;
+    border-radius: 5px;
+}
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .social-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-nav li {
+        margin: 0 5px;
+    }
+}
+
+
+
+
+
+
+
+
+/* estilos del footer */
+
+footer {
+    background-color: #1a7b3b; /* Fondo verde oscuro */
+    color: white;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor Principal */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-
+    padding: 20px;
+    border-top: 5px solid #8dc63f; /* Borde decorativo verde claro */
 }
 
-/* Estilos del Logo */
-.logo img {
-    width: 165px;
-    height: auto;
+/* Información de Contacto */
+.footer-contact h3 {
+    margin-bottom: 10px;
+    color: #8dc63f; /* Verde claro para títulos */
 }
 
-/* Estilos de la Navigacion */
-nav ul {
-    display: flex; /* hace la navegacion horizontal */
-    gap: 20px; /* Espaciado entre links */
-
+.footer-contact p {
+    margin: 5px 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color:black;
-    font-size: 16px;
-    transition: color 0.3s;
+/* Redes Sociales */
+.footer-social h4 {
+    margin-bottom: 10px;
+    color: #8dc63f;
 }
 
-nav ul li a:hover {
-    color: green; /*Color hover al pasar mouse */
-}
-
-.btn{
+.social-icon {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: green;
-    color: black;
-    text-decoration: none;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 2px solid white;
     border-radius: 5px;
-    font-weight: bold;
-
-}
-.btn:hover{
-    background-color: greenyellow;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* estilo del pie de pagina */
-footer{
-    background-color: white;
-    color: black;
-    padding: 209x 0;
-    font-size: 16px;
-}
-
-.contenedor-pie-pagina{
-    max-width: 1200px;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 20px;
-}
-
-.seccion-contacto{
-    flex: 1;
-    min-width: 250px;
-}
-
-.seccion-contacto a{
-    color: black;
     text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
 }
 
-.seccion-contacto a:hover{
-    color: green;
+.social-icon:hover {
+    background-color: white;
+    color: #1a7b3b; /* Verde oscuro */
+    border-color: #8dc63f;
 }
 
-.fin-footer{
+/* Parte Inferior */
+.footer-bottom {
     text-align: center;
-    padding: 10px 0;
- 
-    margin-top: 20px;
-    font-size: 16px;
-    width: 1200px;
+    
+    border-top: 1px solid #8dc63f;
+    height: 20px;
+    font-size: 14px;
+}
 
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Apilar secciones verticalmente */
+        align-items: center;
+    }
+
+    .footer-contact,
+    .footer-social {
+        text-align: center;
+    }
 }

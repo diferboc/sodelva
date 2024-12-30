@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora nuestra amplia gama de productos orgánicos, desde frutas frescas hasta insumos para agricultura sostenible en Soluciones Orgánicas del Valle S.A.">
-    <title>Productos | Soluciones Orgánicas del Valle S.A.</title>
+    <meta name="description" content="Ponte en contacto con Soluciones Orgánicas del Valle S.A. para consultas, pedidos y más.">
+    <title>Contacto | Soluciones Orgánicas del Valle S.A.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
 </head>
@@ -13,9 +14,7 @@
         <div class="contenedor-header">
 
             <div  >
-                <a href="quienessomos.html">
-                    <img class="logosodelva" src="assets/logosodelva (1).png" alt="Logo Soluciones Orgánicas del Valle">
-                </a>
+                <a href="quienessomos.html"><img class="logosodelva" src="assets/logosodelva (1).png" alt="Logo Soluciones Orgánicas del Valle"></a>
                 
             </div>
 
@@ -54,67 +53,37 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Productos</h1>
-            <p>Descubre nuestra selección de productos orgánicos y sostenibles, directamente del campo a tu mesa.</p>
+        <section class="contact-header">
+            <h1>Contáctanos</h1>
+            <p>En Soluciones Orgánicas del Valle S.A., estamos aquí para ayudarte. Puedes comunicarte con nosotros mediante el formulario o la información de contacto proporcionada.</p>
         </section>
 
-        <section class="categories">
-            <h2>Categorías Destacadas</h2>
-            <div class="category-grid">
-                <div class="category">
-                    <h3>Frutas y Vegetales</h3>
-                    <p>Productos frescos y 100% orgánicos.</p>
-                    <a href="store.html#frutas-vegetales" class="btn">Ver Más</a>
-                </div>
-                <div class="category">
-                    <h3>Productos Procesados</h3>
-                    <p>Pulpas, mermeladas y más, con calidad certificada.</p>
-                    <a href="store.html#procesados" class="btn">Ver Más</a>
-                </div>
-                <div class="category">
-                    <h3>Insumos para Agricultura</h3>
-                    <p>Fertilizantes y herramientas sostenibles.</p>
-                    <a href="store.html#insumos" class="btn">Ver Más</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-products">
-            <h2>Productos Destacados</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="images/product1.jpg" alt="Frutas Orgánicas">
-                    <h3>Frutas Orgánicas</h3>
-                    <p>Calidad y sabor incomparables.</p>
-                </div>
-                <div class="product">
-                    <img src="images/product2.jpg" alt="Pulpa de Mango">
-                    <h3>Pulpa de Mango</h3>
-                    <p>Natural y lista para disfrutar.</p>
-                </div>
-                <div class="product">
-                    <img src="images/product3.jpg" alt="Fertilizante Orgánico">
-                    <h3>Fertilizante Orgánico</h3>
-                    <p>Ideal para cultivos sostenibles.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="certifications">
-            <h2>Nuestras Certificaciones</h2>
-            <p>Todos nuestros productos están certificados por organismos reconocidos, asegurando calidad y sostenibilidad.</p>
+        <section class="contact-details">
+            <h2>Información de Contacto</h2>
             <ul>
-                <li>Certificación Orgánica</li>
-                <li>Comercio Justo</li>
-                <li>Sello de Sostenibilidad</li>
+                <li><strong>Teléfono:</strong> +57 123 456 7890</li>
+                <li><strong>Email:</strong> contacto@solucionesorganicas.com</li>
+                <li><strong>Dirección:</strong> Calle 123, Valle del Cauca, Colombia</li>
             </ul>
         </section>
 
-        <section class="call-to-action">
-            <h2>Compra Productos Orgánicos</h2>
-            <p>Visita nuestra tienda en línea y descubre todo lo que tenemos para ofrecerte.</p>
-            <a href="store.html" class="btn">Ir a la Tienda</a>
+        <section class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
         </section>
     </main>
 
@@ -143,3 +112,4 @@
     </footer>
 </body>
 </html>
+

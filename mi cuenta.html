@@ -1,100 +1,109 @@
-<!--Mi Cuenta
-
-Objetivo: Gestionar pedidos, información personal y preferencias.
-
-Secciones:
-
-Perfil:
-
-Información del usuario.
-
-Historial de Pedidos:
-
-Lista de compras con opción de reordenar.
-
-Configuración:
-
-Cambiar contraseña.
-
-Notificaciones.-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MICUENTA</title>
+    <meta name="description" content="Soluciones Orgánicas del Valle - Productos orgánicos de calidad, frescos y locales.">
+    <title>Mi Tienda | Soluciones Orgánicas del Valle</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="contenedor-header">
+
+            <div  >
+                <a href="quienessomos.html"><img class="logosodelva" src="assets/logosodelva (1).png" alt="Logo Soluciones Orgánicas del Valle"></a>
+                
+            </div>
+
+            <div class="barras-navegacion">
+                <nav class="main-nav">
+            
+                    <ul class="nav-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
+                        <li><a href="soy productor.html">Soy Productor</a></li>
+                        <li><a href="mi cuenta.html">Mi Cuenta</a></li>
+                        
+                    </ul>
+                </nav>
+
+                 <!-- barra de navegacion redes sociales -->
+                <nav class="nav-social">
+                    <ul>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html" class="active">Contacto</a></li>
+                        <div class="link_rs">
+                            <li><a href="https://www.facebook.com" target="_blank" class="social-icon"> <img src="assets/LOGOFB.png" alt="icono de facebook"> </a></li>
+                            <li><a href="https://www.instagram.com" target="_blank" class="social-icon"> <img src="assets/LOGOITG.png" alt="icono de instagram"> </a> </li>
+                            <li><a href="https://linkedink.com" target="_blank" class="social-icon"> <img src="assets/icons8-linkedin-50.png" alt="icono de linkedink"> </a></li>
+                        </div>
+                        
+                    </ul>
+                </nav>
+
+
+            </div>
+
+        </div>
+       
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h1>Bienvenido a Soluciones Orgánicas del Valle</h1>
+        <p>Productos frescos, orgánicos y locales directamente de nuestra tierra a tu hogar.</p>
+        <a href="productos.html" class="btn-primary">Ver Productos</a>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="productos">
+            <!-- Aquí se añadirán los productos -->
+            <div class="producto">
+                <img src="img/producto1.jpg" alt="Producto Orgánico 1">
+                <h3>Frutas Orgánicas</h3>
+                <p>$10.00</p>
+                <button class="btn-secundario">Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto2.jpg" alt="Producto Orgánico 2">
+                <h3>Verduras Frescas</h3>
+                <p>$15.00</p>
+                <button class="btn-secundario">Añadir al Carrito</button>
+            </div>
+            <!-- Más productos aquí -->
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-
+        <div class="footer-container">
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <h3>Soluciones Orgánicas del Valle</h3>
+                <p>Dirección: Calle 11, 8 -39 Ciudad de Candelaria, Valle</p>
+                <p>Teléfono: +57 313 525 6779</p>
+                <p>Email: contacto@solucionesorganicas.com</p>
+            </div>
+    
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook"> <img src="assets/LOGOFB.png" alt="logo de facebook"> </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram"> <img src="assets/LOGOITG.png" alt="logo de instagram"></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter"> <img src="assets/icons8-linkedin-50.png" alt="logo de linkedink"></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Soluciones Orgánicas del Valle. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
-    <main>
-        <main>
-            <!-- Sección: Perfil -->
-            <section id="perfil">
-                <h2>Perfil</h2>
-                <div class="info-usuario">
-                    <p><strong>Nombre:</strong> Juan Pérez</p>
-                    <p><strong>Correo Electrónico:</strong> juan.perez@example.com</p>
-                    <p><strong>Teléfono:</strong> +57 300 123 4567</p>
-                    <button onclick="editarPerfil()">Editar Información</button>
-                </div>
-            </section>
-    
-            <!-- Sección: Historial de Pedidos -->
-            <section id="historial-pedidos">
-                <h2>Historial de Pedidos</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Fecha</th>
-                            <th>Producto</th>
-                            <th>Total</th>
-                            <th>Estado</th>
-                            <th>Acción</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>23/12/2024</td>
-                            <td>Pulpas de Mango (5 kg)</td>
-                            <td>$50,000</td>
-                            <td>Entregado</td>
-                            <td><button onclick="reordenarPedido()">Reordenar</button></td>
-                        </tr>
-                        <tr>
-                            <td>15/11/2024</td>
-                            <td>Empaques de Aguacate</td>
-                            <td>$35,000</td>
-                            <td>Entregado</td>
-                            <td><button onclick="reordenarPedido()">Reordenar</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-    
-            <!-- Sección: Configuración -->
-            <section id="configuracion">
-                <h2>Configuración</h2>
-                <div class="form-control">
-                    <label for="password">Cambiar Contraseña:</label>
-                    <input type="password" id="password" placeholder="Nueva Contraseña">
-                    <button onclick="cambiarContrasena()">Guardar</button>
-                </div>
-    
-                <div class="notification-toggle">
-                    <label for="notificaciones">Activar Notificaciones:</label>
-                    <input type="checkbox" id="notificaciones" checked>
-                </div>
-            </section>
-        </main>
-
-    </main>
-
-    <footer>
-        
-    </footer>
-
 </body>
 </html>
